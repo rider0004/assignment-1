@@ -1,0 +1,512 @@
+Testsuite: swen90006.aqms.PartitioningTests
+Tests run: 29, Failures: 0, Errors: 29, Skipped: 0, Time elapsed: 0.071 sec
+
+Testcase: deviceIDContainOtherThanNumeric took 0.012 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: upgradeRole took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: usernameNotExistInLogin took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: usernameNotExistInAssignRole took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: validRegister took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: assignSameRoleUser took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: passwordNoSpecial took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: deviceIDLessThan4 took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: assignSameRoleAdmin took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: duplicatedUsername took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: validGetData took 0.001 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: usernameNotAuthenticated took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: anotherTest took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: usernameLessThan4 took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: validLogin took 0.001 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: incorrectDeviceID took 0.002 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: aFailedTest took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: aTest took 0.001 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: incorrectPassword took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: deviceIDMoreThan4 took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: passwordLessThan8 took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: passwordNoDigit took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: usernameNotExistGetData took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: usernameContainOtherType took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: usernameRoleIsUser took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: passwordNoLetter took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: downgradeRole took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: anExceptionTest took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: indexOutOfBounds took 0 sec
+	Caused an ERROR
+Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+swen90006.aqms.InvalidPasswordException: Password Password1! does not comply with the requirements
+	- must contains at least 8 characters,
+ at least one letter (a-z, A-Z),
+ at least one digit (0-9), and 
+ at least one special character that is not a letter or digit
+	at swen90006.aqms.AQMS.register(AQMS.java:175)
+	at swen90006.aqms.PartitioningTests.setUp(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+

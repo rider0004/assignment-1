@@ -1,0 +1,36 @@
+Testsuite: swen90006.aqms.PartitioningTests
+Tests run: 29, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.165 sec
+
+Testcase: deviceIDContainOtherThanNumeric took 0.013 sec
+Testcase: upgradeRole took 0 sec
+Testcase: usernameNotExistInLogin took 0.001 sec
+Testcase: usernameNotExistInAssignRole took 0.001 sec
+Testcase: validRegister took 0 sec
+Testcase: assignSameRoleUser took 0 sec
+Testcase: passwordNoSpecial took 0.001 sec
+Testcase: deviceIDLessThan4 took 0 sec
+Testcase: assignSameRoleAdmin took 0 sec
+Testcase: duplicatedUsername took 0 sec
+Testcase: validGetData took 0 sec
+Testcase: usernameNotAuthenticated took 0 sec
+Testcase: anotherTest took 0 sec
+Testcase: usernameLessThan4 took 0.001 sec
+Testcase: validLogin took 0 sec
+Testcase: incorrectDeviceID took 0.007 sec
+Testcase: aFailedTest took 0.001 sec
+Testcase: aTest took 0.001 sec
+Testcase: incorrectPassword took 0.001 sec
+Testcase: deviceIDMoreThan4 took 0 sec
+Testcase: passwordLessThan8 took 0 sec
+Testcase: passwordNoDigit took 0 sec
+Testcase: usernameNotExistGetData took 0 sec
+Testcase: usernameContainOtherType took 0.005 sec
+	FAILED
+Expected exception: swen90006.aqms.InvalidUsernameException
+junit.framework.AssertionFailedError: Expected exception: swen90006.aqms.InvalidUsernameException
+
+Testcase: usernameRoleIsUser took 0.001 sec
+Testcase: passwordNoLetter took 0 sec
+Testcase: downgradeRole took 0.001 sec
+Testcase: anExceptionTest took 0.001 sec
+Testcase: indexOutOfBounds took 0.001 sec

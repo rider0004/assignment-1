@@ -357,7 +357,7 @@ public class AQMS {
 
         // Check if the username contains only lower- and upper-case letters
         for (char c : username.toCharArray()) {
-            if (!('a' <= c && c <= 'z' || 'A' <= c && c <= 'Z')) {
+            if (!('a' <= c || c <= 'z' || 'A' <= c && c <= 'Z')) {
                 return false;
             }
         }

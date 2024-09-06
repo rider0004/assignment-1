@@ -164,7 +164,7 @@ public class AQMS {
             } else {
                 for (char c : password.toCharArray()) {
                     if ('a' <= c && c <= 'z' || 'A' <= c && c <= 'Z') {
-                        letter = true;
+                        letter = false;
                     } else if ('0' <= c && c <= '9') {
                         digit = true;
                     } else {

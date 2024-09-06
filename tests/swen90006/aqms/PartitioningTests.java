@@ -2,6 +2,9 @@ package swen90006.aqms;
 
 import org.junit.*;
 
+import javax.management.relation.Role;
+import java.util.*;
+
 import static org.junit.Assert.*;
 
 /**
@@ -15,7 +18,6 @@ import static org.junit.Assert.*;
 public class PartitioningTests {
     // The AQMS instance variable aqms is shared across all test methods in this class
     protected AQMS aqms;
-
     /**
      * The setup method annotated with "@Before" runs before each test.
      * It initializes the AQMS instance and creates a dummy user.
@@ -93,5 +95,157 @@ public class PartitioningTests {
     // ADD YOUR TESTS HERE
     // This is the section where you will add your own tests.
     // Follow the examples above to create your tests.
+    @Test(expected = DuplicateUserException.class)
+    public void duplicatedUsername() throws Throwable {
+        aqms.register("UserNameA", "Password1!", "1234");
+    }
 
+    @Test(expected = InvalidUsernameException.class)
+    public void usernameLessThan4() throws Throwable {
+        aqms.register("UA", "Password1!", "1234");
+    }
+
+    @Test(expected = InvalidUsernameException.class)
+    public void usernameContainOtherType() throws Throwable {
+        aqms.register("@User_Name}", "Password1!", "1234");
+    }
+
+    @Test(expected = InvalidPasswordException.class)
+    public void passwordLessThan8() throws Throwable {
+        aqms.register("UserNameC", "P1!", "1234");
+    }
+
+    @Test(expected = InvalidPasswordException.class)
+    public void passwordNoLetter() throws Throwable {
+        aqms.register("UserNameC", "76543210!", "1234");
+    }
+
+    @Test(expected = InvalidPasswordException.class)
+    public void passwordNoDigit() throws Throwable {
+        aqms.register("UserNameC", "Password!", "1234");
+    }
+
+    @Test(expected = InvalidPasswordException.class)
+    public void passwordNoSpecial() throws Throwable {
+        aqms.register("UserNameC", "Password1", "1234");
+    }
+
+    @Test(expected = InvalidDeviceIDException.class)
+    public void deviceIDLessThan4() throws Throwable {
+        aqms.register("UserNameC", "Password1!", "1");
+    }
+
+    @Test(expected = InvalidDeviceIDException.class)
+    public void deviceIDMoreThan4() throws Throwable {
+        aqms.register("UserNameC", "Password1!", "12345");
+    }
+
+    @Test(expected = InvalidDeviceIDException.class)
+    public void deviceIDContainOtherThanNumeric() throws Throwable {
+        aqms.register("UserNameC", "Password1!", "A12CD");
+    }
+
+    @Test
+    public void validRegister() throws Throwable {
+        aqms.register("NewUserName", "Password1!", "4321");
+        assertTrue(aqms.isUser("NewUserName"));
+    }
+
+    @Test(expected = NoSuchUserException.class)
+    public void usernameNotExistInLogin() throws Throwable {
+        aqms.login("UnknownUN", "Password1!", "1234");
+    }
+
+    @Test(expected = IncorrectPasswordException.class)
+    public void incorrectPassword() throws Throwable {
+        aqms.register("NewUserName", "Password1!", "4321");
+        aqms.login("NewUserName", "Password2!", "4321");
+    }
+
+    @Test(expected = IncorrectDeviceIDException.class)
+    public void incorrectDeviceID() throws Throwable {
+        aqms.register("NewUserName", "Password2!", "4321");
+        aqms.login("NewUserName", "Password2!", "1234");
+    }
+
+    @Test
+    public void validLogin() throws Throwable {
+        aqms.register("NewUserName", "Password1!", "4321");
+        aqms.login("NewUserName", "Password1!", "4321");
+
+        assertTrue(aqms.isAuthenticated("NewUserName"));
+    }
+
+    @Test(expected = NoSuchUserException.class)
+    public void usernameNotExistInAssignRole() throws Throwable {
+        aqms.assignRole("NewUserName", AQMS.Role.ADMIN);
+    }
+
+    @Test(expected = InvalidAssignedRoleException.class)
+    public void downgradeRole() throws Throwable {
+        aqms.register("NewUserName", "Password1!", "4321");
+        aqms.assignRole("NewUserName", AQMS.Role.ADMIN);
+        aqms.assignRole("NewUserName", AQMS.Role.USER);
+    }
+
+    @Test
+    public void assignSameRoleUser() throws Throwable {
+        aqms.register("NewUserName", "Password1!", "4321");
+        aqms.assignRole("NewUserName", AQMS.Role.USER);
+        assertEquals(aqms.getRole("NewUserName"), AQMS.Role.USER);
+    }
+
+    @Test
+    public void assignSameRoleAdmin() throws Throwable {
+        aqms.register("NewUserName", "Password1!", "4321");
+        aqms.assignRole("NewUserName", AQMS.Role.ADMIN);
+        aqms.assignRole("NewUserName", AQMS.Role.ADMIN);
+        assertEquals(aqms.getRole("NewUserName"), AQMS.Role.ADMIN);
+    }
+
+    @Test
+    public void upgradeRole() throws Throwable {
+        aqms.register("NewUserName", "Password1!", "4321");
+        aqms.assignRole("NewUserName", AQMS.Role.USER);
+        aqms.assignRole("NewUserName", AQMS.Role.ADMIN);
+        assertEquals(aqms.getRole("NewUserName"), AQMS.Role.ADMIN);
+    }
+
+    @Test(expected = NoSuchUserException.class)
+    public void usernameNotExistGetData() throws Throwable {
+        aqms.getData("NewUserName", 0);
+    }
+
+    @Test(expected = UnauthenticatedUserException.class)
+    public void usernameNotAuthenticated() throws Throwable {
+        aqms.register("NewUserName", "Password1!", "4321");
+        aqms.assignRole("NewUserName", AQMS.Role.ADMIN);
+        aqms.getData("NewUserName", 0);
+    }
+
+    @Test(expected = AccessRightException.class)
+    public void usernameRoleIsUser() throws Throwable {
+        aqms.register("NewUserName", "Password1!", "4321");
+        aqms.login("NewUserName", "Password1!", "4321");
+        aqms.getData("NewUserName", 0);
+    }
+
+    @Test(expected = java.lang.IndexOutOfBoundsException.class)
+    public void indexOutOfBounds() throws Throwable {
+        aqms.register("NewUserName", "Password1!", "4321");
+        aqms.assignRole("NewUserName", AQMS.Role.ADMIN);
+        aqms.login("NewUserName", "Password1!", "4321");
+        aqms.getData("NewUserName", -10);
+    }
+
+    @Test
+    public void validGetData() throws Throwable {
+        aqms.register("NewUserName", "Password1!", "4321");
+        aqms.assignRole("NewUserName", AQMS.Role.ADMIN);
+        aqms.login("NewUserName", "Password1!", "4321");
+        List<Integer> data = new ArrayList<>();
+        data.add(0);
+        aqms.addData("NewUserName", data);
+        aqms.getData("NewUserName", 0);
+    }
 }

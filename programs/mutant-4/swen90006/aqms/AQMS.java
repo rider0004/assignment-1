@@ -274,7 +274,7 @@ public class AQMS {
             throw new NoSuchUserException(username);
         }
         // check if we are downgrading the role
-        if (roles.get(username) == Role.ADMIN && role == Role.USER) {
+        if (roles.get(username) == Role.USER && role == Role.USER) {
             throw new InvalidAssignedRoleException(roles.get(username).toString(), role.toString());
         }
         else{

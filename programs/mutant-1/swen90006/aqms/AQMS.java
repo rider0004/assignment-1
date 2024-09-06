@@ -159,7 +159,7 @@ public class AQMS {
             boolean digit = false;
             boolean special = false;
 
-            if (password.length() < 8) {
+            if (password.length() < 7) {
                 throw new InvalidPasswordException(password);
             } else {
                 for (char c : password.toCharArray()) {

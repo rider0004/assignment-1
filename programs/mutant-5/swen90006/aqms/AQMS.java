@@ -351,7 +351,7 @@ public class AQMS {
      */
     private boolean isValidUsername(String username) {
         // Check if the username is at least 4 characters long
-        if (username.length() < 4) {
+        if (username.length() < 5) {
             return false;
         }
 

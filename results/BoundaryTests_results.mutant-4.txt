@@ -1,0 +1,97 @@
+Testsuite: swen90006.aqms.BoundaryTests
+Tests run: 38, Failures: 2, Errors: 4, Skipped: 0, Time elapsed: 0.098 sec
+
+Testcase: invalidUsernameInRegister took 0.016 sec
+Testcase: invalidRegisterDeviceIDShorter took 0 sec
+Testcase: validGetDataIndex0 took 0 sec
+Testcase: anotherTest took 0 sec
+Testcase: invalidRegisterDeviceIDLonger took 0 sec
+Testcase: validGetDataIndexSizeMinus1 took 0.002 sec
+	Caused an ERROR
+Index 1 out of bounds for length 1
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at swen90006.aqms.AQMS.getData(AQMS.java:335)
+	at swen90006.aqms.BoundaryTests.validGetDataIndexSizeMinus1(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: validRegisterPasswordAndDeviceID took 0.001 sec
+	FAILED
+null
+junit.framework.AssertionFailedError
+	at swen90006.aqms.BoundaryTests.validRegisterPasswordAndDeviceID(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: invalidPasswordInRegister took 0.001 sec
+Testcase: validGetDataIndexSize took 0.001 sec
+Testcase: validGetDataIndexMinus1 took 0.001 sec
+	Caused an ERROR
+Unexpected exception, expected<java.lang.IndexOutOfBoundsException> but was<swen90006.aqms.UnauthenticatedUserException>
+java.lang.Exception: Unexpected exception, expected<java.lang.IndexOutOfBoundsException> but was<swen90006.aqms.UnauthenticatedUserException>
+Caused by: swen90006.aqms.UnauthenticatedUserException: User NewUserName is not authenticated
+	at swen90006.aqms.AQMS.getData(AQMS.java:331)
+	at swen90006.aqms.BoundaryTests.validGetDataIndexMinus1(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: deviceIDContainOtherThanNumeric took 0 sec
+Testcase: upgradeRole took 0.008 sec
+	Caused an ERROR
+Can not change role from: USER to USER
+swen90006.aqms.InvalidAssignedRoleException: Can not change role from: USER to USER
+	at swen90006.aqms.AQMS.assignRole(AQMS.java:278)
+	at swen90006.aqms.PartitioningTests.upgradeRole(Unknown Source)
+	at swen90006.aqms.BoundaryTests.upgradeRole(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: usernameNotExistInLogin took 0.001 sec
+Testcase: usernameNotExistInAssignRole took 0 sec
+Testcase: validRegister took 0 sec
+Testcase: assignSameRoleUser took 0.002 sec
+	Caused an ERROR
+Can not change role from: USER to USER
+swen90006.aqms.InvalidAssignedRoleException: Can not change role from: USER to USER
+	at swen90006.aqms.AQMS.assignRole(AQMS.java:278)
+	at swen90006.aqms.PartitioningTests.assignSameRoleUser(Unknown Source)
+	at swen90006.aqms.BoundaryTests.assignSameRoleUser(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+Testcase: passwordNoSpecial took 0 sec
+Testcase: deviceIDLessThan4 took 0 sec
+Testcase: assignSameRoleAdmin took 0 sec
+Testcase: duplicatedUsername took 0.001 sec
+Testcase: validGetData took 0 sec
+Testcase: usernameNotAuthenticated took 0 sec
+Testcase: usernameLessThan4 took 0 sec
+Testcase: validLogin took 0 sec
+Testcase: incorrectDeviceID took 0 sec
+Testcase: aFailedTest took 0 sec
+Testcase: aTest took 0 sec
+Testcase: incorrectPassword took 0.001 sec
+Testcase: deviceIDMoreThan4 took 0 sec
+Testcase: passwordLessThan8 took 0 sec
+Testcase: passwordNoDigit took 0 sec
+Testcase: usernameNotExistGetData took 0 sec
+Testcase: usernameContainOtherType took 0 sec
+Testcase: usernameRoleIsUser took 0 sec
+Testcase: passwordNoLetter took 0 sec
+Testcase: downgradeRole took 0 sec
+	FAILED
+Expected exception: swen90006.aqms.InvalidAssignedRoleException
+junit.framework.AssertionFailedError: Expected exception: swen90006.aqms.InvalidAssignedRoleException
+
+Testcase: anExceptionTest took 0 sec
+Testcase: indexOutOfBounds took 0 sec
